@@ -1,0 +1,15 @@
+
+# Archivo para corre el contenedor
+# Declara como se va a correr el contenedor y desde donde
+
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:        # Para actualizar los cambios en el programa todo el tiempo 
+      - .:/app     
+    ports:          # Para actualizar los puertos
+     - '8080:80'  
+
+# Construir el servicio desde el contexto desde la carpeta que estoy ubicado y ahí va a buscar el archivo Dockerfile para poder construir el conteneder

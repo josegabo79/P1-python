@@ -1,4 +1,5 @@
 import random
+import numpy as np
 options = ("piedra","papel","tijera")
 round = 1
 computer_win = 0

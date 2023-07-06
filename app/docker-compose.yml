@@ -1,0 +1,14 @@
+
+# Archivo para corre el contenedor
+# Declara como se va a correr el contenedor y desde donde
+
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app     
+      
+
+# Construir el servicio desde el contexto desde la carpeta que estoy ubicado y ahí va a buscar el archivo Dockerfile para poder construir el conteneder
